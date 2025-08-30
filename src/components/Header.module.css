@@ -1,0 +1,145 @@
+.header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchWrapper {
+  display: none;
+}
+.searchInput {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: 180px;
+  transition: border 0.2s;
+}
+.searchInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+@media (min-width: 768px) {
+  .searchWrapper {
+    display: block;
+  }
+}
+
+.cart {
+  position: relative;
+  color: #444;
+  text-decoration: none;
+}
+.cart:hover {
+  color: #007bff;
+}
+.cartBadge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.profileMenu {
+  position: relative;
+}
+.profileButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  font-size: 0.95rem;
+}
+.profileButton:hover {
+  color: #007bff;
+}
+.userName {
+  display: none;
+}
+@media (min-width: 768px) {
+  .userName {
+    display: inline;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 120%;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  width: 180px;
+  display: none;
+  flex-direction: column;
+}
+.profileMenu:hover .dropdown {
+  display: flex;
+}
+.dropdownItem {
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  background: #fff;
+  border: none;
+  text-align: left;
+}
+.dropdownItem:hover {
+  background: #f5f5f5;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  text-decoration: none;
+}
+.login:hover {
+  color: #007bff;
+}
+.loginText {
+  display: none;
+}
+@media (min-width: 768px) {
+  .loginText {
+    display: inline;
+  }
+}

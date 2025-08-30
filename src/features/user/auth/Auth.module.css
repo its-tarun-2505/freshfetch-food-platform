@@ -1,0 +1,103 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 420px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+.field input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.field input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.15);
+}
+
+.error {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+.success {
+  color: #2a9d8f;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.loginBtn {
+  background: #007bff;
+}
+.loginBtn:hover {
+  background: #0056b3;
+}
+.signupBtn {
+  background: #28a745;
+}
+.signupBtn:hover {
+  background: #1e7e34;
+}
+
+.link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+}
+.link:hover {
+  color: #0056b3;
+}
+
+.extra {
+  text-align: center;
+  margin-top: 1rem;
+}
